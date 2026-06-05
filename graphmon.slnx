@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/graphmon.AppHost/graphmon.AppHost.csproj" />
+    <Project Path="src/graphmon.ServiceDefaults/graphmon.ServiceDefaults.csproj" />
+  </Folder>
+  <Folder Name="/src/Pokedex/">
+    <Project Path="src/Pokedex/Pokedex.Api/Pokedex.Api.csproj" />
+    <Project Path="src/Pokedex/Pokedex.Application/Pokedex.Application.csproj" />
+    <Project Path="src/Pokedex/Pokedex.Domain/Pokedex.Domain.csproj" />
+    <Project Path="src/Pokedex/Pokedex.Infrastructure/Pokedex.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/Pokedex/">
+    <Project Path="tests/Pokedex/Pokedex.UnitTests/Pokedex.UnitTests.csproj" />
+    <Project Path="tests/Pokedex/Pokedex.IntegrationTests/Pokedex.IntegrationTests.csproj" />
+  </Folder>
+</Solution>

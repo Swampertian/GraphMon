@@ -1,0 +1,308 @@
+.vs/
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Rider (JetBrains)
+.idea/
+*.sln.iml
+*.iml
+
+# Language Server cache
+*.lscache
+
+# Visual Studio Code
+.vscode-test
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ============================================================================
+# Build Results
+# ============================================================================
+
+# MSBuild Output
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Bb]in*/
+[Oo]bj/
+[Oo]bj*/
+[Ll]og/
+[Ll]ogs/
+
+# Build artifacts
+artifacts/
+*.exp
+*.lib
+
+# ============================================================================
+# NuGet
+# ============================================================================
+
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+.nuget/project.lock.json
+.nuget/project.assets.json
+*.nuget.props
+*.nuget.targets
+
+# ============================================================================
+# Testing
+# ============================================================================
+
+TestResults/
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Code coverage
+coverage/
+*.opencover.xml
+*.codecov
+
+# NUnit 3
+nunit3*.xml
+
+# Coverlet
+coverage.json
+.coverage
+.coverletSettings.json
+
+# ============================================================================
+# Entity Framework
+# ============================================================================
+
+# Migrations (opcional - descomente se quiser ignorar)
+# Migrations/
+
+# SQLite databases
+*.db
+*.db-shm
+*.db-wal
+
+# ============================================================================
+# Environment & Configuration
+# ============================================================================
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production.local
+.env.production
+.env.staging
+
+# Application settings
+appsettings.*.json
+!appsettings.json
+!appsettings.Development.json
+
+# Secrets
+user-secrets/
+secrets/
+
+
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+
+
+docker-compose.override.yml
+docker-compose.local.yml
+.dockerignore
+
+# Docker volumes
+db/
+
+
+
+*.tmp
+*.temp
+*.bak
+*.backup
+~*
+*.swp
+*.swo
+*~
+.~*
+
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.Python
+venv/
+env/
+ENV/
+
+# ============================================================================
+# Logs
+# ============================================================================
+
+logs/
+*.log
+*.log.*
+
+# Keep Fire domain entities named "Logs" tracked (business entities, not runtime logs)
+!src/Fire/Fire.Domain/Entities/Logs/
+!src/Fire/Fire.Domain/Entities/Logs/*.cs
+
+# ============================================================================
+# Runtime & Process Files
+# ============================================================================
+
+*.pid
+*.seed
+*.pid.lock
+
+# ============================================================================
+# SSL Certificates (self-signed for development)
+# ============================================================================
+
+*.pem
+*.key
+*.crt
+*.cer
+*.pfx
+*.p12
+
+# ============================================================================
+# IDE Generated Files
+# ============================================================================
+
+.project
+.cproject
+.c9/
+
+# ============================================================================
+# Node (se usar npm scripts)
+# ============================================================================
+
+node_modules/
+npm-debug.log
+yarn-error.log
+.npm
+
+# ============================================================================
+# IDE User Files
+# ============================================================================
+
+*.userprefs
+*.pidb
+*.pgc
+*.pdb
+
+# Rider
+.idea/
+
+# MonoDevelop/Xamarin Studio
+mono_crash.*
+
+# ============================================================================
+# Misc
+# ============================================================================
+
+.localhistory/
+
+# Arquivo de licença de desenvolvimento
+.devLicense
+
+# Cache
+.cache/
+
+# ============================================================================
+# FTP
+# ============================================================================
+
+.ftp-config.json
+
+# ============================================================================
+# OS generated files
+# ============================================================================
+
+.desktop
+.lnk
+
+# ============================================================================
+# OpenCover (code coverage)
+# ============================================================================
+
+OpenCover/
+*.opencover.xml
+
+# ============================================================================
+# Sonar Qube
+# ============================================================================
+
+.sonarqube/
+.sonarhome/
+
+# ============================================================================
+# ReShaper
+# ============================================================================
+
+_ReSharper*/
+*.resharper.user
+
+# ============================================================================
+# Turbo Specific
+# ============================================================================
+
+dist/
+.turbo/
+
+# ============================================================================
+# Git Worktrees
+# ============================================================================
+
+.worktrees/
+
+# ============================================================================
+# End of .gitignore
+# ============================================================================
+
+bin\\Debug
+scripts/**/data/*
+test-results/
+[Dd]ata/*
+
+.codex
+.dotnet

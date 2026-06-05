@@ -1,0 +1,6 @@
+{
+  "appHost": {
+    "language": "csharp",
+    "path": "src/graphmon.AppHost/graphmon.AppHost.csproj"
+  }
+}
