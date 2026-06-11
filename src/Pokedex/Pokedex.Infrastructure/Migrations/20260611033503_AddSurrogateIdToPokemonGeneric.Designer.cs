@@ -11,8 +11,8 @@ using Pokedex.Infrastructure;
 namespace Pokedex.Infrastructure.Migrations
 {
     [DbContext(typeof(PokedexDbContext))]
-    [Migration("20260610072203_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20260611033503_AddSurrogateIdToPokemonGeneric")]
+    partial class AddSurrogateIdToPokemonGeneric
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,9 +26,12 @@ namespace Pokedex.Infrastructure.Migrations
 
             modelBuilder.Entity("Pokedex.Domain.Entities.PokemonGeneric", b =>
                 {
-                    b.Property<int>("Number")
-                        .HasColumnType("integer")
-                        .HasColumnName("number");
+                    b.Property<short>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("smallint")
+                        .HasColumnName("id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<short>("Id"));
 
                     b.Property<int?>("Attack")
                         .HasColumnType("integer")
@@ -54,6 +57,10 @@ namespace Pokedex.Infrastructure.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("character varying(100)")
                         .HasColumnName("name");
+
+                    b.Property<int>("Number")
+                        .HasColumnType("integer")
+                        .HasColumnName("number");
 
                     b.Property<int?>("Sp_Attack")
                         .HasColumnType("integer")
@@ -81,7 +88,7 @@ namespace Pokedex.Infrastructure.Migrations
                         .HasColumnType("character varying(50)")
                         .HasColumnName("type2");
 
-                    b.HasKey("Number");
+                    b.HasKey("Id");
 
                     b.ToTable("pokemon_generic", (string)null);
                 });
