@@ -9,9 +9,9 @@ public sealed class PokemonGenericConfigurations : IEntityTypeConfiguration<Poke
     public void Configure(EntityTypeBuilder<PokemonGeneric> entity)
     {
         entity.ToTable("pokemon_generic");
-        entity.HasKey(x => x.Number);
-
-        entity.Property(x => x.Number).HasColumnName("number").ValueGeneratedNever();
+        entity.HasKey(x => x.Id);
+        entity.Property(x => x.Id).HasColumnName("id").ValueGeneratedOnAdd();
+        entity.Property(x => x.Number).HasColumnName("number");
         entity.Property(x => x.Name).HasColumnName("name").HasMaxLength(100);
         entity.Property(x => x.Type1).HasColumnName("type1").HasMaxLength(50);
         entity.Property(x => x.Type2).HasColumnName("type2").HasMaxLength(50);

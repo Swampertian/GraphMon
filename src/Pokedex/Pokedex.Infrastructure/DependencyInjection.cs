@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Pokedex.Domain.Interfaces;
 using Pokedex.Infrastructure.Repositories;
+using Pokedex.Infrastructure.Seed;
 
 namespace Pokedex.Infrastructure;
 
@@ -16,6 +17,7 @@ public static class DependencyInjection
             options.UseNpgsql(connectionString));
 
         services.AddScoped<IPokemonRepository, PokemonRepository>();
+        services.AddScoped<IPokemonSeeder, PokemonGenericSeeder>();
 
         return services;
     }

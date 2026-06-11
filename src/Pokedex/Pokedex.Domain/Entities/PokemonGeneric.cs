@@ -4,6 +4,7 @@ namespace Pokedex.Domain.Entities;
 
 public class PokemonGeneric
 {
+    public short Id { get; set; }
     public int Number { get; set; }
     public string? Name{ get; set; }
     public string? Type1 { get; set; }

@@ -18,7 +18,7 @@ public sealed class QueryPokemonGenericResolver
         var pokemonsQuery = repository.Query();
 
         var pokemonEntities = pokemonsQuery
-            .OrderByDescending(x => x.Number)
+            .OrderBy(x => x.Number)
             .ToList();
 
         var pokemonResults = pokemonEntities.Select(MapToPokemonResultDto).ToList();
