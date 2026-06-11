@@ -3,12 +3,15 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
   </PropertyGroup>
-
   <ItemGroup Label="Aspire">
+    <PackageVersion Include="Aspire.Hosting.Docker" Version="13.3.2" />
+    <PackageVersion Include="Aspire.Hosting.PostgreSQL" Version="13.3.2" />
+    <PackageVersion Include="Aspire.Hosting.RabbitMQ" Version="13.3.2" />
+    <PackageVersion Include="Aspire.Hosting.Redis" Version="13.3.2" />
     <PackageVersion Include="Microsoft.Extensions.Http.Resilience" Version="10.6.0" />
     <PackageVersion Include="Microsoft.Extensions.ServiceDiscovery" Version="10.6.0" />
+    <PackageVersion Include="Polly.Core" Version="8.7.0" />
   </ItemGroup>
-
   <ItemGroup Label="OpenTelemetry">
     <PackageVersion Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.15.3" />
     <PackageVersion Include="OpenTelemetry.Extensions.Hosting" Version="1.15.3" />
@@ -16,14 +19,12 @@
     <PackageVersion Include="OpenTelemetry.Instrumentation.Http" Version="1.15.1" />
     <PackageVersion Include="OpenTelemetry.Instrumentation.Runtime" Version="1.15.1" />
   </ItemGroup>
-
   <ItemGroup Label="GraphQL">
     <PackageVersion Include="HotChocolate.AspNetCore" Version="15.1.14" />
     <PackageVersion Include="HotChocolate.Data" Version="15.1.14" />
     <PackageVersion Include="HotChocolate.Language" Version="15.1.14" />
     <PackageVersion Include="HotChocolate.Types" Version="15.1.14" />
   </ItemGroup>
-
   <ItemGroup Label="EntityFramework">
     <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="10.0.0" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.InMemory" Version="10.0.0" />
@@ -31,14 +32,12 @@
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.0" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.0" />
   </ItemGroup>
-
   <ItemGroup Label="Npgsql">
     <PackageVersion Include="Npgsql" Version="10.0.0" />
     <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.0" />
     <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite" Version="10.0.0" />
     <PackageVersion Include="Npgsql.NetTopologySuite" Version="10.0.0" />
   </ItemGroup>
-
   <ItemGroup Label="Testing">
     <PackageVersion Include="coverlet.collector" Version="6.0.4" />
     <PackageVersion Include="FluentAssertions" Version="8.3.0" />
